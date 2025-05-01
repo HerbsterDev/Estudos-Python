@@ -11,7 +11,7 @@ while True:
 
 print(quantidade_notas)
 
-# Exercício 2 - Tabuada de um número
+# Exercício 2 - Preço Total com Desconto
 
 total = 0
 
