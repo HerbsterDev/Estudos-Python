@@ -1,51 +1,27 @@
-# Contagem de 1 a 10
+# Exercício 1 - Contagem de Notas
 
-contador = 1
-while contador <= 10:
-    print(contador)
-    contador += 1
+quantidade_notas = 0
 
+while True:
+    nota = float(input('Digite a nota (ou uma nota negativa para sair)! '))
+    if nota < 0:
+        break
+    if 0 <= nota <= 10:
+        quantidade_notas += 1
 
+print(quantidade_notas)
 
-# Somando números até digitar 0
+# Exercício 2 - Preço Total com Desconto
 
-soma = 0
-numero = int(input('Digite um número (0 para sair): '))
-while numero != 0:
-    soma += numero
-    numero = int(input('Digite outro número (0 para sair): '))
-print('Soma total:', soma)
+total = 0
 
+while True:
+    preco = float(input('Digite o preço do produto (0 para encerrar)! '))
+    if preco == 0:
+        break
+    total += preco
 
+if total > 100:
+    total *= 0.9 
 
-# Verificador de senha
-
-senha = ''
-while senha != '1234':
-    senha = input('Digite a senha: ')
-print('Acesso permitido.')
-
-
-# Tabuada de um número
-
-numero = int(input('Digite um número para ver a tabuada: '))
-contador = 1
-while contador <= 10:
-    print(numero, 'x', contador, '=', numero * contador)
-    contador += 1
-
-# Média de notas até digitar nota negativa
-
-soma = 0
-contador = 0
-nota = float(input('Digite uma nota (negativa para encerrar): '))
-while nota >= 0:
-    soma += nota
-    contador += 1
-    nota = float(input('Digite outra nota (negativa para encerrar): '))
-if contador > 0:
-    media = soma / contador
-    print('Média das notas:', round(media, 2))
-else:
-    print('Nenhuma nota válida foi digitada.')
-# TODO: Update docstring for function documentation (Pull Shark test)
+print(total)

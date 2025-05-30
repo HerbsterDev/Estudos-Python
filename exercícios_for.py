@@ -1,14 +1,15 @@
+# Exercício 1 – Contar de 1 até n
 
+n = int(input('Digite um número inteiro positivo!'))
 
-# Exemplo de uso do break
-for i in range(1, 101):
-    if i == 50:
-        break
+for i in range(1, n + 1):
     print(i)
 
-# Exemplo de uso do continue com números ímpares
-for i in range(1,1001):
-    if i % 2 == 0:
-        continue
-    print(i)
+# Exercício 2 – Tabuada de um número
 
+num = int(input('Digite um número para ver a tabuada!'))
+
+for i in range(1, 11):
+    print(f'{num} x {i} = {num * i}')
+
+# Exercício 2 - Preço Total com Desconto
