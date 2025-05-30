@@ -211,4 +211,4 @@ while True:
     else:
         print("\nErro: Opção inválida.")
 
-print('Programa finalizado com sucesso.')
+print('Programa finalizado com sucesso!')
